@@ -47,6 +47,7 @@ jobs:
       run:
         shell: bash
         working-directory: 2-WebApp-graphapi-on-behalf
+        
     needs: build
     environment:
       name: 'Production'
@@ -57,6 +58,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: node-app
+          path: 2-WebApp-graphapi-on-behalf
 
       - name: Unzip artifact for deployment
         run: unzip release.zip
