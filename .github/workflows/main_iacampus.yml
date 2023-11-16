@@ -61,7 +61,7 @@ jobs:
           path: 2-WebApp-graphapi-on-behalf/release.zip
 
       - name: Unzip artifact for deployment
-        run: unzip release.zip
+        run: unzip 2-WebApp-graphapi-on-behalf/release.zip
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
