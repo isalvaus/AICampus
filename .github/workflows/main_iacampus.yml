@@ -39,7 +39,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: node-app
-          path: release.zip
+          path: 2-WebApp-graphapi-on-behalf/release.zip
 
   deploy:
     runs-on: ubuntu-latest
@@ -58,7 +58,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: node-app
-          path: 2-WebApp-graphapi-on-behalf
+          path: 2-WebApp-graphapi-on-behalf/release.zip
 
       - name: Unzip artifact for deployment
         run: unzip release.zip
