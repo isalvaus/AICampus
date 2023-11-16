@@ -43,6 +43,10 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: 2-WebApp-graphapi-on-behalf
     needs: build
     environment:
       name: 'Production'
