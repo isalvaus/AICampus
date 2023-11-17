@@ -67,4 +67,4 @@ jobs:
           app-name: 'IACampus'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E7E591FA276843D68A1AE559315D9EA4 }}
-          package: .
+          package: /home/runner/work/AICampus/AICampus
