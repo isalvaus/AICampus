@@ -56,7 +56,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 const appSettings = {
-    tenantId: "common", // Enter the tenant info here,
+    tenantId: "02f3b59f-fc90-4a23-9955-b5210e7f0667", // Enter the tenant info here,
     clientId: process.env.WEBSITE_AUTH_CLIENT_ID, // Enter the client Id here,
     clientSecret: process.env.MICROSOFT_PROVIDER_AUTHENTICATION_SECRET, // Enter the client secret here,
     redirectUri: "/.auth/login/aad/callback", // Enter the redirect route here
